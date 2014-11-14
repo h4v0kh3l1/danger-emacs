@@ -171,6 +171,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Macros
 ;;; Set up a three column window
+(fset 'four-on-the-floor
+	  [?\C-x ?1 ?\C-x ?3 ?\C-x ?3 ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?o ?\C-x ?3])
+(global-set-key (kbd "C-c 4") 'four-on-the-floor)
 (fset 'three-column-disp
    [?\C-x ?1 ?\C-x ?3 ?\C-x ?3 ?\M-x ?b ?a ?l ?a tab return ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?o ?\C-x ?2])
 (global-set-key (kbd "C-c 3") 'three-column-disp)
@@ -180,6 +183,7 @@
 (fset 'two-one
    "\C-x1\C-x3\C-x2")
 (global-set-key (kbd "C-c 1") 'two-one)
+(put 'four-on-the-floor 'kmacro t)
 (put 'three-column-disp 'kmacro t)
 (put 'two-one-one 'kmacro t)
 (put 'two-one 'kmacro t)
