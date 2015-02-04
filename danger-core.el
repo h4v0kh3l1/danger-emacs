@@ -59,6 +59,7 @@
 ;; Now these are "defaults" that will be used unless you customize
 ;; your own.
 
+(global-linum-mode t)
 (setq column-number-mode t)
 (setq delete-selection-mode t)
 (delete-selection-mode t)
@@ -68,7 +69,7 @@
        (autojoin button completion fill irccontrols
                  list match menu move-to-prompt netsplit
                  networks noncommands readonly ring services stamp track)))
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq inhibit-startup-screen t)
 (setq scroll-bar-mode (quote right))
 ;;
