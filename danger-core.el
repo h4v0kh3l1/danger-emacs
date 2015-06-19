@@ -53,6 +53,9 @@
                         'rainbow-delimiters
                         'magit
                         'haskell-mode))
+(message "Updating package listing...")
+(package-refresh-contents)
+(message "done.")
 (mapc (lambda (p)
         (unless (require p nil 'noerror)
           (package-install p)))
