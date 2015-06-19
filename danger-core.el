@@ -362,5 +362,11 @@
 (add-to-list 'auto-mode-alist '("\\.sqlstache\\'" . sql-mode))
 (add-hook 'sql-mode-hook 'sql-highlight-ansi-keywords)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Exec-path-from-shell
+;;;
+;;; For unifying all the environments that emacs can run in
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 (provide 'danger-core)
