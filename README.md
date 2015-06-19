@@ -59,8 +59,11 @@ is deprecated, so try `cider`.
 
 ### Miscellaneous
 
+On startup, this emacs installation checks for and installs the
+following packages.
 * Rainbow delimiters, for all your lispy languages: `rainbow-delimiters`
 * Magit, for better git in emacs: `magit`
+* Haskell mode: `haskell-mode`
 
 ## And you're done!
 
