@@ -374,4 +374,8 @@
 (require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Haskell Mode
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
+
 (provide 'danger-core)
