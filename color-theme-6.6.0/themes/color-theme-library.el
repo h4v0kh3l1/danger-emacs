@@ -4388,7 +4388,8 @@ other ones; I hope you like it."
      (sgml-end-tag-face ((t (:foreground "greenyellow"))))
      (sgml-entity-face ((t (:foreground "gold"))))
      (flyspell-incorrect-face ((t (:foreground "OrangeRed" :bold t :underline t))))
-     (flyspell-duplicate-face ((t (:foreground "Gold3" :bold t :underline t)))))))
+     (flyspell-duplicate-face ((t (:foreground "Gold3" :bold t :underline t))))
+     (magit-item-highlight ((t (:background "dark slate gray")))))))
 
 (defun color-theme-bharadwaj ()
   "Color theme by Girish Bharadwaj, created 2001-03-28.
