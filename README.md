@@ -12,7 +12,7 @@ Clone this repository into your `~/.emacs.d/` directory.  For example
 This will clone this content into the `danger-emacs` directory.
 
 ## Initialize the submodules
-After you check out this repo, 
+After you check out this repo,
 
 ```
 cd danger-emacs ;
@@ -48,16 +48,20 @@ That's ok, keep going.
 ```
 M-x package-refresh-contents
 ```
- 
+
 Then, install the packages specified below. If you add new packages to the repo, make sure to update the lists below.
 
 ### Clojure
 
 * `M-x package-install [RET] clojure-mode [RET]`
-* `M-x package-install [RET] nrepl [RET]`
-* 
+* `M-x package-install [RET] nrepl [RET]`, though it looks like nrepl
+is deprecated, so try `cider`.
+
+### Miscellaneous
+
+* Rainbow delimiters, for all your lispy languages: `rainbow-delimiters`
+* Magit, for better git in emacs: `magit`
 
 ## And you're done!
 
 Restart emacs and it should load with no errors! Feel free to add your own customizations to your `.emacs` and `.emacs.d` directories. As we find things that are good for the whole team, check them in- but create a test user on your local machine and make sure you update these installation steps as required.
-
