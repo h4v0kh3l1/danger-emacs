@@ -401,4 +401,8 @@
         (setq tab-width 4)
         (setq python-indent 4)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; etags in git project support
+(require 'etags-danger)
+
 (provide 'danger-core)
