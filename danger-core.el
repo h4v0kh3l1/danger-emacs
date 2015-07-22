@@ -358,4 +358,8 @@
 (add-hook 'sql-mode-hook 'sql-highlight-ansi-keywords)
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; etags in git project support
+(require 'etags-danger)
+
 (provide 'danger-core)
